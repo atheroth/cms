@@ -18,14 +18,20 @@ class PostController extends Controller
 
     public function create()
     {
-        //
+        //реализация добавления поста
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
+
+    public function update()
     {
-        //
+        $post = Post::find(1);
+        //реализация апдейта
+    }
+
+    public function delete()
+    {
+        $post = Post::find(1);
+        $post->delete();
+        dd($post);
     }
 }
