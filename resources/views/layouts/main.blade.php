@@ -2,20 +2,20 @@
 <html lang="ru">
 
 <head>
-    @component('components.MetaTagHeader')
-    @endcomponent
-    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOME</title>
+    @include('components.meta-tags')
 </head>
 
 <body>
+    @include('components.header')
 
-    @component('components.header')
-    @endcomponent
+    <div class="container">
+        @yield('content')
+    </div>
 
-    <h1>Home</h1>
-
-    @component('components.Posts', ['posts' => $posts])
-    @endcomponent
 
 </body>
 

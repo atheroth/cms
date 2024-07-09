@@ -10,25 +10,21 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::where('is_published', 1)->get();
-        return view('layouts.posts', compact('posts'));
+        return view('post.posts', compact('posts'));
     }
 
     public function create()
     {
-        //реализация добавления поста
+        // Your create logic
     }
-
 
     public function update()
     {
-        $post = Post::find(1);
-        //реализация апдейта
+        // Your update logic
     }
 
     public function delete()
     {
-        $post = Post::find(1);
-        $post->delete();
-        dd($post);
+        // Your delete logic
     }
 }

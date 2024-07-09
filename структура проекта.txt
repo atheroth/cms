@@ -1,0 +1,30 @@
+resources
+├── views
+│   ├── layouts
+│   │   └── main.blade.php
+│   ├── components
+│   │   ├── header.blade.php
+│   │   ├── footer.blade.php
+│   │   ├── meta-tags.blade.php
+│   │   ├── posts
+│   │   │   └── post-item.blade.php
+│   │   ├── categories
+│   │   │   └── category-item.blade.php
+│   │   └── tags
+│   │       └── tag-item.blade.php
+│   ├── posts
+│   │   ├── index.blade.php
+│   │   ├── create.blade.php
+│   │   ├── update.blade.php
+│   │   └── delete.blade.php
+│   ├── categories
+│   │   ├── index.blade.php
+│   │   ├── create.blade.php
+│   │   ├── update.blade.php
+│   │   └── delete.blade.php
+│   ├── tags
+│   │   ├── index.blade.php
+│   │   ├── create.blade.php
+│   │   ├── update.blade.php
+│   │   └── delete.blade.php
+│   └── home.blade.php

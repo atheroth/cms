@@ -16,7 +16,6 @@ use App\Http\Controllers\MainController;
 */
 
 Route::get('/', [MainController::class, 'index'])->name('main');
-
 Route::get('/post', [PostController::class, 'index'])->name('post');
 Route::get('/post/create', [PostController::class, 'create'])->name('post.create');
 Route::get('/post/update', [PostController::class, 'update'])->name('post.update');
