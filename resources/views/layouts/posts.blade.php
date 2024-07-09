@@ -4,16 +4,14 @@
 <head>
     @component('components.MetaTagHeader')
     @endcomponent
-    <title>Home</title>
+    <title>Posts</title>
 </head>
 
 <body>
 
     @component('components.header')
     @endcomponent
-
-    <h1>Home</h1>
-
+    <h1>Posts</h1>
     @component('components.Posts', ['posts' => $posts])
     @endcomponent
 
