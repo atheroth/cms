@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\MainController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,11 +15,9 @@ use App\Http\Controllers\PostController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [MainController::class, 'index'])->name('main');
 
-Route::get('/post', [PostController::class, 'index']);
-Route::get('/post/create', [PostController::class, 'create']);
-Route::get('/post/update', [PostController::class, 'update']);
-Route::get('/post/delete', [PostController::class, 'delete']);
+Route::get('/post', [PostController::class, 'index'])->name('post');
+Route::get('/post/create', [PostController::class, 'create'])->name('post.create');
+Route::get('/post/update', [PostController::class, 'update'])->name('post.update');
+Route::get('/post/delete', [PostController::class, 'delete'])->name('post.delete');
