@@ -12,7 +12,7 @@
                         <a class="nav-link active" aria-current="page" href="{{ route('main') }}">Главная</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('post') }}">Posts</a>
+                        <a class="nav-link" href="{{ route('post.index') }}">Статьи</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true">Закрытая ссылка</a>
