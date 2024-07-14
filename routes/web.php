@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\MainController;
@@ -20,3 +21,13 @@ Route::get('/post', [PostController::class, 'index'])->name('post');
 Route::get('/post/create', [PostController::class, 'create'])->name('post.create');
 Route::get('/post/update', [PostController::class, 'update'])->name('post.update');
 Route::get('/post/delete', [PostController::class, 'delete'])->name('post.delete');
+
+
+
+Route::get('/clear', function () {
+    Artisan::call('cache:clear');
+    Artisan::call('config:cache');
+    Artisan::call('view:clear');
+    Artisan::call('route:clear');
+    return "Кэш очищен.";
+});

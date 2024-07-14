@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="{{ asset('favicon.ico') }}" rel="stylesheet">
+<link href="{{ asset('favicon.png') }}" rel="stylesheet">
 <link rel="stylesheet" href="{{ asset('css/bootstrap-reboot.min.css') }}">
 <link rel="stylesheet" href="{{ asset('css/bootstrap-grid.min.css') }}">
 <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
