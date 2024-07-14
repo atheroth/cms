@@ -1,7 +1,7 @@
 @extends('layouts.main')
-@section('title', 'Posts')
 @section('content')
     @foreach ($posts as $post)
-        <div>{{ $post->id }}. <a href="#">{{ $post->title }}</a> | {{ $post->created_at->format('d.m.Y') }}"</div>
+        <div>{{ $post->id }}. <a href="{{ route('post.show', $post->id) }}">{{ $post->title }}</a> <span
+                class="text-muted">({{ $post->created_at->format('d.m.Y') }})</span></div>
     @endforeach
 @endsection
