@@ -19,6 +19,7 @@ use App\Http\Controllers\MainController;
 Route::get('/', [MainController::class, 'index'])->name('main');
 Route::get('/post', [PostController::class, 'index'])->name('post');
 Route::get('/post/create', [PostController::class, 'create'])->name('post.create');
+Route::post('/post', [PostController::class, 'store'])->name('post.store');
 Route::get('/post/update', [PostController::class, 'update'])->name('post.update');
 Route::get('/post/delete', [PostController::class, 'delete'])->name('post.delete');
 

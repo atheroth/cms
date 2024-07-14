@@ -1,6 +1,7 @@
 @extends('layouts.main')
 @section('content')
-    <form action="">
+    <form action="{{ route('post.store') }}" method="POST">
+        @csrf
         <div class="mb-2">
             <h5><label class="form-label mt-2">Заголовок</label></h5>
             <input type="text" class="form-control" id="title" placeholder="Заголовок статьи">
